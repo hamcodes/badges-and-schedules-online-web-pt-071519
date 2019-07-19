@@ -11,7 +11,16 @@ def assign_rooms(list)
   "Hello, #{person}! You'll be assigned to room #{index +1}!"}
 end
 
-def printer(attendees)
-  batch_badge_creator(attendees).each do {|name,room|
+
+def printer(speaker)
+  batch_badge_creator(speaker).each do |badge|
+      puts badge
+  end 
+  assign_rooms(speaker).each do |assignment|
+    puts assignment
+  end 
+ end 
+# def printer(attendees)
+#   batch_badge_creator(attendees).each do {|name,room|
   
-end
+# end
